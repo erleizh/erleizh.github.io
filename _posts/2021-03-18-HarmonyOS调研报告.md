@@ -9,7 +9,7 @@
 > HarmonyOS是一款“面向未来”、面向全场景（移动办公、运动健康、社交通信、媒体娱乐等）的分布式操作系统。在传统的单设备系统能力的基础上，HarmonyOS提出了基于同一套系统能力、适配多种终端形态的分布式理念，能够支持手机、平板、智能穿戴、智慧屏、车机等多种终端设备。
 > 
 > - 对消费者而言，HarmonyOS能够将生活场景中的各类终端进行能力整合，可以实现不同的终端设备之间的快速连接、能力互助、资源共享，匹配合适的设备、提供流畅的全场景体验。
-> - <u>**对应用开发者而言，HarmonyOS采用了多种分布式技术，使得应用程序的开发实现与不同终端设备的形态差异无关。这能够让开发者聚焦上层业务逻辑，更加便捷、高效地开发应用。**</u>
+> - 对应用开发者而言，HarmonyOS采用了多种分布式技术，使得应用程序的开发实现与不同终端设备的形态差异无关。这能够让开发者聚焦上层业务逻辑，更加便捷、高效地开发应用。
 > - 对设备开发者而言，HarmonyOS采用了组件化的设计方案，可以根据设备的资源能力和业务特征进行灵活裁剪，满足不同形态的终端设备对于操作系统的要求。
 > 
 > [系统定位视频介绍](https://mos-vod-drcn.dbankcdn.cn/P_VT/video_injection/A91343E9D/v3/9AB0A7921049102362779584128/MP4Mix_H.264_1920x1080_6000_HEAAC1_PVC_NoCut.mp4)
@@ -34,7 +34,7 @@ OpenHarmony截止2021-03，共有137个仓库，包含内核，驱动，等等�
 
 OpenHarmony 和 HarmonyOS 的关系类似于 AOSP 和 Android 的关系
 
-####HarmonyOS如何兼容Android
+#### HarmonyOS如何兼容Android
 
 目前官网上没有关于如何兼容android的说明，但是查看源码可知
 
@@ -50,7 +50,7 @@ OpenHarmony 和 HarmonyOS 的关系类似于 AOSP 和 Android 的关系
 
 [我的第一个鸿蒙app，以及所见内容](https://zhuanlan.zhihu.com/p/338663467)
 
-####如何开发HarmonyOS App
+#### 如何开发HarmonyOS App
 
 1. 开发工具
   
@@ -145,13 +145,13 @@ OpenHarmony 和 HarmonyOS 的关系类似于 AOSP 和 Android 的关系
   ![image20210306192558901](https://raw.githubusercontent.com/erleizh/erleizh.github.io/master/screenshots/HarmonyOS调研报告/image-20210306192558901.png)
   
 
-####总结
+#### 总结
 
 **作为Android应用开发者，鸿蒙无论是开发工具，还是项目结构都与Android保持高度一致 。开发者学习成本低**
 
 **但就目前来看，对没有多设备协同需求的应用开发者吸引力较小 ，基础功能尚不完善，保持适当关注即可**
 
-####扩展一 、关于Fuchsia
+#### 扩展一 、关于Fuchsia
 
 1. Fuchsia简介
   
