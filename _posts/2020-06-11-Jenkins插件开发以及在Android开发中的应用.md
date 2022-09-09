@@ -407,7 +407,7 @@ public class ApkUploaderPublisher extends Recorder {
 }
 ```
 
-####调试
+#### 调试
 
 插件UI部分直接刷新浏览器就可以实时看到效果，但是java代码调试需要以下步骤：
 
@@ -452,19 +452,19 @@ apk-uploader.hpi
 
 插件开发完毕后，我们需要部署到云服务器上。找运维同学申请资源之后就可以开始部署打包机了
 
-####1.安装jenkins
+#### 1.安装jenkins
 
 首先需要在服务器上安装jenkins，官方文档已经很详细了，不在赘述
 
 [安装jenkins](https://www.jenkins.io/zh/doc/book/installing/)
 
-####2.创建项目
+#### 2.创建项目
 
 `Jenkins -> New Item`
 
 jenkins 提供了多种项目类型，这里我们选用`Freestyle Project`即可，然后输入项目名，点击 `OK` 项目就创建好了
 
-####3.安装插件
+#### 3.安装插件
 
 在经过调研之后，我们选用了以下第三方插件来实现需求
 
@@ -479,7 +479,7 @@ jenkins 提供了多种项目类型，这里我们选用`Freestyle Project`即�
 
 还有我们自己开发的 `apk-uploader`插件，在`Plugin Manager -> advanced`中点击`Upload Plugin`上传刚才生成的hpi文件。
 
-####4.配置项目
+#### 4.配置项目
 
 项目配置分为五大类
 
@@ -512,7 +512,7 @@ jenkins 提供了多种项目类型，这里我们选用`Freestyle Project`即�
   此处还可以配置钉钉通知插件，将编译信息发送到钉钉群组
   
 
-####5.部署完成
+#### 5.部署完成
 
 到这里，整个打包机就已经可以工作了，整个工作流程就是 在Jenkins上选择构建参数之后，点击开始构建，然后jenkins自动从git仓库拉取代码，执行gradle插件中指定的gradle task，编译完成后按顺序执行指定的Post-build Actions。例如 ：将apk上传到百度云，修改编译后描述信息将二维码展示出来，发送钉钉通知等
 
